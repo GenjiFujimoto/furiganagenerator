@@ -22,9 +22,9 @@ def to_hiragana(text, forest):
     X = np.fromiter((paded_int[i:i+11] for i in range(len(text)) if mask[i]), dtype=np.dtype((int, 11)))
     bundled_prediction = pred(X, forest)
 
-    return ''.join(char if not boolean
-                   else f'{char}[{bundled_prediction.pop(0)}]'
-                   for char, boolean in zip(text, mask))
+    return ''.join(char if not kanji
+                   else f'{char}[{bundled_prediction.pop(0)}] '
+                   for char, kanji in zip(text, mask))
 
 
 forest = [None] * 20878 # Initialize buckets
