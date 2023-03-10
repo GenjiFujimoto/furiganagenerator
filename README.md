@@ -1,6 +1,6 @@
 
-This is a program to generate furigana, given japanese input. It is based on a machine learning approach and was trained with a couple of ジュニア文庫 books. However input data wasn't always perfect and as these books were meant for a younger audience, this also probably won't recognize more obscure kanji or complicated expressions.
-However testing on a small sample already resulted in ~98.5% accuracy.
+This is a program to generate furigana, given japanese input. It is based on a machine learning approach and was trained with a couple of ジュニア文庫 books. However input data wasn't always perfect and too little.However testing on a sample already resulted in ~98% accuracy.\
+This was just intended to be a proof of concept, so there is still a lot of room for improvement. It should also be possible to increase the prediction speed to near instantaneous (for single sentence input).
 
 ## Usage
 ```
